@@ -135,41 +135,10 @@
 			<div class="col-xs-12 col-md-9">
 				<h2 class="visible-xs visible-sm">My Portfolio</h2>
 				<div class="row">
-					<div class="col-xs-12 col-sm-4">
-						<div class="panel panel-default">
-							<div class="panel-heading">
-								<h4 class="panel-title">AV-CRM</h4>
-							</div>
-							<div class="panel-body">
-								<img class="img-responsive" src="images/av-crm.png" alt="AV-CRM">
-								<br><p>AV-CRM  is a fully responsive call center usage CRM.  </p>
-							</div>
-							<div class="panel-footer">
-								<a class="btn btn-default btn-block" href="https://github.com/albsector/AV-CRM">
-									Check it out <i class="fa fa-arrow-right"></i>
-								</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-xs-12 col-sm-4">
-						<div class="panel panel-default">
-							<div class="panel-heading">
-								<h4 class="panel-title">AlbSector-Project</h4>
-							</div>
-							<div class="panel-body">
-								<img class="img-responsive" src="images/albsector.png" alt="AlbSector-Project">
-								<br><p>AlbSector-Project  Blog CMS    Deprecated!</p>
-								
-							</div>
-							<div class="panel-footer">
-								<a class="btn btn-default btn-block" href="https://github.com/adalenv/AlbSector-Project">
-									Check it out <i class="fa fa-arrow-right"></i>
-								</a>
-							</div>
-						</div>
-					</div>
 					
-					</div>
+					<ul class="projects-ul">
+					</ul>
+				</div>
 				</div>
 			</div>
 		<hr class="secDiv">
@@ -201,7 +170,131 @@
 </footer>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
+<script>
+	const classes = {
+  a: "projects-a",
+  li: "projects-li",
+  ul: "projects-ul",
+  lang: "projects-lang",
+  desc: "projects-desc"
+};
 
-  
+const username = "adalenv";
+
+const repoXHR = new XMLHttpRequest();
+
+function populate() {
+  const repos = JSON.parse(this.response);
+  const ul = document.getElementsByClassName(classes.ul)[0];
+
+  for (var i = 0, len = repos.length; i < len; i++) {
+    if (!repos[i].fork) {
+      const li = document.createElement("li");
+      const a = document.createElement("a");
+      const p = document.createElement("p");
+      const p2 = document.createElement("p");
+      
+      li.className = classes.li;
+      
+      a.className = classes.a;
+      a.href = repos[i].html_url;
+      a.innerText = repos[i].name;
+      
+      p.className = classes.lang;
+      p.innerText = repos[i].language || " ";
+      
+      p2.className = classes.desc;
+      p2.innerText = repos[i].description;
+      
+      ul.appendChild(li)
+        .appendChild(a)
+        .appendChild(p)
+        .appendChild(p2);
+    }
+  }
+}
+
+repoXHR.open(
+  "GET",
+  'https://api.github.com/users/' + username + '/repos?sort=pushed&type=owner',
+  true
+);
+repoXHR.addEventListener("load", populate);
+repoXHR.send();
+
+</script>
+  <style>
+
+
+.projects-title {
+  color: #518bbe;
+  vertical-align: .35em;
+  display: inline-block;
+  font-size: 2em;
+  font-weight: 400;
+}
+
+.projects-ul {
+  margin: 0;
+  padding: 0;
+}
+
+.projects-li {
+  box-sizing: border-box;
+  width: 16em;
+  height: 11em;
+  vertical-align: top;
+  display: inline-block;
+  list-style: none;
+  margin: 1em 0 0 1em;
+  padding: .5em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.projects-li:nth-child(3n-2) {
+  margin: 1em 0 0 0;
+}
+
+.projects-a {
+  height: 11em;
+	border-top: .5em solid #efefef;
+	display: block;
+  color: #518bbe;
+  text-decoration: none;
+  padding: 0 .5em 0 0;
+  margin: 0;
+  font-size: 1.1em;
+}
+.projects-a:hover {
+  border-top: .5em solid #4C4690;
+}
+
+.projects-a:hover {
+  color: #4C4690;
+}
+
+.projects-lang {
+  color: #999;
+  font-size: .8em;
+  margin: .2em 0 0 0;
+}
+
+.projects-desc {
+  color: #171717;
+  text-overflow: inherit;
+}
+
+.social-icons {
+	display: inline-block;
+  width: 3em;
+  height: 3em;
+  margin-right: .5em;
+}
+
+.social-icons path {
+  fill: #518bbe;
+}
+</style>
 </body>
 </html>
