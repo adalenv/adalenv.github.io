@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/adalenv
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://adalenv.github.io
+  * I am adalenv (https://keybase.io/adalenv) on keybase.
+  * I have a public key with fingerprint C0E2 18F0 E3AE DD2B A6DB  2C9B B549 4F5C A538 5013
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01018f4f2559adc370f0767a83756a76be1b609b2d62d65f8071309df2a1f31d96750a",
+      "fingerprint": "c0e218f0e3aedd2ba6db2c9bb5494f5ca5385013",
+      "host": "keybase.io",
+      "key_id": "b5494f5ca5385013",
+      "kid": "01018f4f2559adc370f0767a83756a76be1b609b2d62d65f8071309df2a1f31d96750a",
+      "uid": "f7c87df240732853d98af0ecda39cd19",
+      "username": "adalenv"
+    },
+    "service": {
+      "hostname": "adalenv.github.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1552641493,
+  "expire_in": 157680000,
+  "prev": "4c3800cfd73350b5b96107027548c1c7a6bbaa8b40fe140e88446a04d82d0348",
+  "seqno": 5,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.1.0
+Comment: https://keybase.io/crypto
+
+yMIlAnicrVJbSFRBGN61G0ll1EsXrThFG2Ey5zLnBtV2oxuViUTm1jJzZo47uZ5d
+d89ZjbAL3R7Sbg8RJAQWWXYDMam3yoIsqIgKgoJNumgIXaDQSGuO1UPQY8PA8P//
+933z/T//7bHDArnBlmBDOtixGQTv3zzpBSIHq55uF3CCbBPM7UIlHXponNC0G61k
+RDAFIAJRtxVbgtBAxJI1YANN1ZAua1BFmoqpiFVgYImo/EJbB5ooA4PYEhJtWSSG
+qkGAhELBZk4FTSVTzHG5rAWoxHUBlRElRMJIJViyDIyhYig2tBCUdQhEmRNjibTP
+4OYwStMiluA5HkSH7P0D/599e0NytmbpGi8qQJMlHcrE0BF3bxEkGxYRDR+YpikH
+VVGORgTFqZMR6goFnswwi/pz9Rv5G1BUwdyYh3/1lEwl3ISViPNyzHWTadOnu9uS
+Pr6G4uhvpShmDuGz5IwMTaVZwhFMkSMtl/nSIoSSqoiKIRcKtDbJUjTKfATUVB3w
+4/9DM1xSsWSesGyiyTIEGGJDFYEGJA0quiVaGlIxRkjHCrCpqACq64qiIqAQXSJA
+VnTB763aSQgm5DZRBZdMswoHuV6KCnW3bkSGB4K5gZEjcvwdC+SOHv9n87xZowbV
++mmPXnVMzx6fOdHKTM3pu1MfqckDP8ze1g+Tu9q8gifPOm+Hu9Z1XulJfvcWH94X
+YnnNYnbD8lD8y+Py4jXClobLcyM79mRbC5JPth5nA2uvl3YfO3FkkbL60eeiCftj
+g7Ck60DjwIt7C1ax0y/zLrR3DObVnVdHNGyccaSw9OjGObOry0fe/XHmqxQ5v2RK
+/F7tPPdC9N2hvSu7T4XXbGBjchrfdpgXJ8YPtJxrHuxBLeWhxfPzl4UPPm1vmlxc
+MvZoTX+qHC7tnWM+aCpD/Z2bqnb3XXpdf3fclvfkY378Wz77tHOHt9A5C2Y9X2Gu
+3/zw2q5syCsLzw2H3rRNulrv/QT19z6n
+=Nl7u
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/adalenv
+
+==================================================================
