@@ -1,303 +1,595 @@
-<!DOCTYPE html>
-<html >
-<head>
-  <meta charset="UTF-8">
-  <title>Adalen VLADI</title>
-
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-82743212-6"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-82743212-6');
-</script>
-
-  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
-<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'>
-<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Indie+Flower'>
-
-      <link rel="stylesheet" href="css/style.css">
-
- <script type="application/ld+json">
-{
-  "@context": "http://schema.org",
-  "@type": "Person",
-
-  "email": "adalenvladi@gmail.com",
-  "image": "images/adalenv.jpg",
-  "jobTitle": "Web Developer",
-  "name": "Adalen Vladi",
-  "telephone": "+355 683546168",
-  "url": "https://adalenv.github.io",
-    "sameAs": [
-    "http://www.facebook.com/adalenv",
-    "http://instagram.com/adalenv",
-    "http://www.linkedin.com/in/adalenv",
-    "http://plus.google.com/+AdalenVladi"
-  ]
-}
-</script>
-</head>
-
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>adalenv</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
+<link rel="icon" href="https://avatars2.githubusercontent.com/u/7238874?v=4" type="image/png"></head>
 <body>
-  <header class="top">
-	<nav class="navbar navbar-inverse navbar-static-top">
-		<div class="container">
-			<div class="navbar-header">
-				<a class="navbar-brand" href="#">adalen vladi</a>
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navMenu">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-			</div>
-			<div id="navMenu" class="collapse navbar-collapse">
-				<ul class="nav navbar-nav navbar-right">
-					<li>
-						<a href="#about">
-							<i class="fa fa-user"></i> about
-						</a>
-					</li>
-					<li>
-						<a href="#portfolio">
-							<i class="fa fa-magic"></i> portfolio
-						</a>
-					</li>
-					<li>
-						<a href="#contact">
-							<i class="fa fa-envelope"></i> contact
-						</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</nav>
-	<div class="container">
-		<div class="row">
+    <div id="loading">
+        <div id="spinner"></div>
+    </div>
+    <div id="profile">
+        <div id="profile_img" style="background: url(https://avatars2.githubusercontent.com/u/7238874?v=4) center;"></div>
+        <div id="username"><span style="display:block;">Adalen Vladi</span>@adalenv</div>
+        <div id="userbio" style="display: block;">Online Now</div>
+        <div id="about">
+                <span style="display:block;"><i class="fas fa-users"></i> &nbsp; @albsector </span>
+                <span style="display:none;"><i class="fas fa-envelope"></i> &nbsp; null</span>
+                <span style="display:block;"><i class="fas fa-link"></i> &nbsp; https://adalenv.github.io</span>
+                <span style="display:block;"><i class="fas fa-map-marker-alt"></i> &nbsp;&nbsp; Internet</span>
+                <span style="display:block;"><i class="fas fa-user-tie"></i> &nbsp;&nbsp; Available for hire</span></div>
+    </div>
+    <div id="display">
+        <div id="work">
+            <h1>Work.</h1>
+            <div class="projects" id="work_section">
+                        <a href="https://github.com/adalenv/htmlson.js" target="_blank">
+                        <section>
+                            <div class="section_title">htmlson.js</div>
+                            <div class="about_section">
+                            <span style="display:block;">Convert JSON array of objects into to HTML table!</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; JavaScript</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 7</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 3</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/adalenv/kerma" target="_blank">
+                        <section>
+                            <div class="section_title">kerma</div>
+                            <div class="about_section">
+                            <span style="display:block;">demi2.0</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Python</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 3</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 1</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/adalenv/smartCDR" target="_blank">
+                        <section>
+                            <div class="section_title">smartCDR</div>
+                            <div class="about_section">
+                            <span style="display:block;">Asterisk CDR reports made simple!</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; PHP</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 3</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/adalenv/demi" target="_blank">
+                        <section>
+                            <div class="section_title">demi</div>
+                            <div class="about_section">
+                            <span style="display:block;">dëmi - Mikrotik Auto Exploiter (check demi2.0 named kerma)</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Python</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 2</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 6</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/adalenv/opus" target="_blank">
+                        <section>
+                            <div class="section_title">opus</div>
+                            <div class="about_section">
+                            <span style="display:none;">undefined</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; PHP</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 2</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/adalenv/PayLen" target="_blank">
+                        <section>
+                            <div class="section_title">PayLen</div>
+                            <div class="about_section">
+                            <span style="display:block;">Payroll System</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; CSS</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 2</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/adalenv/freel" target="_blank">
+                        <section>
+                            <div class="section_title">freel</div>
+                            <div class="about_section">
+                            <span style="display:block;">lp</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; HTML</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 1</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/adalenv/AsteriskRecFinder" target="_blank">
+                        <section>
+                            <div class="section_title">AsteriskRecFinder</div>
+                            <div class="about_section">
+                            <span style="display:none;">undefined</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; PHP</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 1</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/adalenv/AsteriskRecFinderFTP" target="_blank">
+                        <section>
+                            <div class="section_title">AsteriskRecFinderFTP</div>
+                            <div class="about_section">
+                            <span style="display:none;">undefined</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; PHP</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 1</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/adalenv/AV-CRM" target="_blank">
+                        <section>
+                            <div class="section_title">AV-CRM</div>
+                            <div class="about_section">
+                            <span style="display:block;">AV-CRM For Call Center </span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; JavaScript</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 1</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 3</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/adalenv/AV-CRM-JS" target="_blank">
+                        <section>
+                            <div class="section_title">AV-CRM-JS</div>
+                            <div class="about_section">
+                            <span style="display:block;">AV-CRM in JavaScript with PHP powered backend API</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; CSS</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 1</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/adalenv/CrptoRiseWP" target="_blank">
+                        <section>
+                            <div class="section_title">CrptoRiseWP</div>
+                            <div class="about_section">
+                            <span style="display:none;">undefined</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; PHP</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 1</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/adalenv/cryptoChat" target="_blank">
+                        <section>
+                            <div class="section_title">cryptoChat</div>
+                            <div class="about_section">
+                            <span style="display:block;">Chat for cryptoLEN</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; JavaScript</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 1</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/adalenv/cryptoLEN" target="_blank">
+                        <section>
+                            <div class="section_title">cryptoLEN</div>
+                            <div class="about_section">
+                            <span style="display:block;">CMC on VUE </span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; JavaScript</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 1</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/adalenv/websites" target="_blank">
+                        <section>
+                            <div class="section_title">websites</div>
+                            <div class="about_section">
+                            <span style="display:block;"> svn export github.com/adalenv/websites/trunk/'folder-name'</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; HTML</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 1</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/adalenv/digitalLand" target="_blank">
+                        <section>
+                            <div class="section_title">digitalLand</div>
+                            <div class="about_section">
+                            <span style="display:block;">lp</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; CSS</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 1</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/adalenv/equit" target="_blank">
+                        <section>
+                            <div class="section_title">equit</div>
+                            <div class="about_section">
+                            <span style="display:block;">lp</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; CSS</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 1</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/adalenv/adalen.ml" target="_blank">
+                        <section>
+                            <div class="section_title">adalen.ml</div>
+                            <div class="about_section">
+                            <span style="display:block;">adalen.ml Website Source Code</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; CSS</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 1</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 1</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/adalenv/FrontBackJS" target="_blank">
+                        <section>
+                            <div class="section_title">FrontBackJS</div>
+                            <div class="about_section">
+                            <span style="display:none;">undefined</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:none;"><i class="fas fa-code"></i>&nbsp; null</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 1</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/adalenv/AccountKit-Implemention" target="_blank">
+                        <section>
+                            <div class="section_title">AccountKit-Implemention</div>
+                            <div class="about_section">
+                            <span style="display:block;">wiki</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; PHP</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 1</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/adalenv/helloB" target="_blank">
+                        <section>
+                            <div class="section_title">helloB</div>
+                            <div class="about_section">
+                            <span style="display:block;">lp &gt; helloB surce</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; HTML</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 1</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/adalenv/adalenv.github.io" target="_blank">
+                        <section>
+                            <div class="section_title">adalenv.github.io</div>
+                            <div class="about_section">
+                            <span style="display:block;">Portfolio Website</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; HTML</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 1</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/adalenv/kamailio-sip-phones" target="_blank">
+                        <section>
+                            <div class="section_title">kamailio-sip-phones</div>
+                            <div class="about_section">
+                            <span style="display:block;">Show sip phones registered on kamailio using php</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; PHP</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 1</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/adalenv/adimate" target="_blank">
+                        <section>
+                            <div class="section_title">adimate</div>
+                            <div class="about_section">
+                            <span style="display:block;"> Automatic Design Spider</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Shell</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 1</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/adalenv/NextHome" target="_blank">
+                        <section>
+                            <div class="section_title">NextHome</div>
+                            <div class="about_section">
+                            <span style="display:none;">undefined</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; PHP</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 1</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/adalenv/AlbSector-Project" target="_blank">
+                        <section>
+                            <div class="section_title">AlbSector-Project</div>
+                            <div class="about_section">
+                            <span style="display:block;">Live demo :</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; PHP</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 1</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/adalenv/opus_chat" target="_blank">
+                        <section>
+                            <div class="section_title">opus_chat</div>
+                            <div class="about_section">
+                            <span style="display:none;">undefined</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; PHP</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 1</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/adalenv/AndiMovies" target="_blank">
+                        <section>
+                            <div class="section_title">AndiMovies</div>
+                            <div class="about_section">
+                            <span style="display:block;">Movies Website Framework . AndiMovies is an open source movie database and website. Catalog your video collection with ease. Automatic update of information and images.</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; JavaScript</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 1</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 2</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/adalenv/RocketAudit" target="_blank">
+                        <section>
+                            <div class="section_title">RocketAudit</div>
+                            <div class="about_section">
+                            <span style="display:none;">undefined</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; JavaScript</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 1</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/adalenv/apolonia" target="_blank">
+                        <section>
+                            <div class="section_title">apolonia</div>
+                            <div class="about_section">
+                            <span style="display:block;">web repo</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; PHP</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 1</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/adalenv/TBcode" target="_blank">
+                        <section>
+                            <div class="section_title">TBcode</div>
+                            <div class="about_section">
+                            <span style="display:block;">lp</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; HTML</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 1</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/adalenv/the_commander" target="_blank">
+                        <section>
+                            <div class="section_title">the_commander</div>
+                            <div class="about_section">
+                            <span style="display:block;">Put the simple script on crontab and control server from git push</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Shell</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 1</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/adalenv/Vici-Cdr-email-report" target="_blank">
+                        <section>
+                            <div class="section_title">Vici-Cdr-email-report</div>
+                            <div class="about_section">
+                            <span style="display:block;">Get email report </span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; PHP</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 1</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/adalenv/VoipRates" target="_blank">
+                        <section>
+                            <div class="section_title">VoipRates</div>
+                            <div class="about_section">
+                            <span style="display:block;">Voip Rates Calculator</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; CSS</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 1</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/adalenv/gopower" target="_blank">
+                        <section>
+                            <div class="section_title">gopower</div>
+                            <div class="about_section">
+                            <span style="display:none;">undefined</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; HTML</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/adalenv/LastCall" target="_blank">
+                        <section>
+                            <div class="section_title">LastCall</div>
+                            <div class="about_section">
+                            <span style="display:block;">vici - vtiger - cdr  4d last call report</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; PHP</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/adalenv/ListenManualCallsAsterisk" target="_blank">
+                        <section>
+                            <div class="section_title">ListenManualCallsAsterisk</div>
+                            <div class="about_section">
+                            <span style="display:none;">undefined</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; PHP</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/adalenv/mING" target="_blank">
+                        <section>
+                            <div class="section_title">mING</div>
+                            <div class="about_section">
+                            <span style="display:none;">undefined</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; PHP</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/adalenv/vici_bulk_uploader" target="_blank">
+                        <section>
+                            <div class="section_title">vici_bulk_uploader</div>
+                            <div class="about_section">
+                            <span style="display:block;">Reupload files</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Shell</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/adalenv/vtiger-comments-report" target="_blank">
+                        <section>
+                            <div class="section_title">vtiger-comments-report</div>
+                            <div class="about_section">
+                            <span style="display:none;">undefined</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; HTML</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                            </div>
+                        </section>
+                        </a></div>
+        </div>
+        <div id="forks" style="display:none;">
+            <h1>Forks.</h1>
+            <div class="projects" id="forks_section"></div>
+        </div>
+        <div id="blog_section">
+            <h1>Blog.</h1>
+            <div id="blogs"></div>
+        </div>
+        <div id="footer">
+            <a href="https://github.com/adalenv" target="_blank">made on earth by a human</a>
+        </div>
+    </div>
+    <script type="text/javascript">
+    setTimeout(function(){
+        document.getElementById("loading").classList.add("animated");
+        document.getElementById("loading").classList.add("fadeOut");
+        setTimeout(function(){
+        document.getElementById("loading").classList.remove("animated");
+        document.getElementById("loading").classList.remove("fadeOut");
+        document.getElementById("loading").style.display = "none";
+        },800);
+    },1500);
+    $.getJSON("blog.json", function(blog){
+        if(blog.length == 0){
+            return document.getElementById("blog_section").style.display = "none";
+        }
+        for(var i = 0; i < blog.length; i++){
+            $("#blogs").append(`
+            <a href="./blog/${blog[i].url_title}/" target="_blank">
+                <section>
+                    <img src="${blog[i].top_image}">
+                    <div class="blog_container">
+                        <div class="section_title">${blog[i].title}</div>
+                        <div class="about_section">
+                            ${blog[i].sub_title}
+                        </div>
+                    </div>
+                </section>
+            </a>
+            `);
+        }
+    });
+    </script>
 
-		</div>
-		<div class="row">
-			<div class="col-xs-12 text-center">
-				<h1>Adalen Vladi</h1>
-				<h3>PHP Developer</h3>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-xs-12 text-center social">
-				<a href="https://facebook.com/adalenv" target="_blank">
-					<i class="fa fa-facebook"></i>
-				</a>
-				<a href="https://instagram.com/adalenv" target="_blank">
-					<i class="fa fa-instagram"></i>
-				</a>
-				<a href="https://in.linkedin.com/in/adalenv" target="_blank">
-					<i class="fa fa-linkedin"></i>
-				</a>
-				<a href="https://stackoverflow.com/users/5960742/adaleni?tab=profile" target="_blank">
-					<i class="fa fa-stack-overflow"></i>
-				</a>
-				<a href="https://github.com/adalenv" target="_blank">
-					<i class="fa fa-github"></i>
-				</a>
-			</div>
-		</div>
-		<hr class="secDiv">
-	</div>
-</header>
-<main>
-	<section id="about" class="container">
-		<div class="row">
-			<div class="col-md-3 text-right hidden-sm hidden-xs">
-				<h2>About<br>Me</h2>
-			</div>
-			<div class="col-xs-12 col-md-9">
-				<h2 class="visible-xs visible-sm">About Me</h2>
-				<p class="lead">I am a `cyber-nerd` from Albania who absolutely loves technology.</p>
-				<p class="text-justify">I am also a coder, developer, hacker, gamer, music lover, and coffee addict. 
-					My passion
-					drives me to stay updated with the latest trends in the field of cyber, web and information technology. I endorse the Open-Source community and do my best to contribute towards it. My goal is to meet and work with a team of like-minded people where I can ideate freely and use my expertise to achieve excellence or build something truly remarkable.</p>
-				<p class="text-justify">I am available as a freelance web developer and would love to take up challenging projects. If you would like to talk about a project, opportunity, consult about something or would simply like to chat, feel free to leave a message.</p>
-			</div>
-		</div>
-		<hr class="secDiv">
-	</section>
-	<section id="portfolio" class="container">
-		<div class="row">
-			<div class="col-md-3 text-right hidden-sm hidden-xs">
-				<h2>My<br>Portfolio</h2>
-			</div>
-			<div class="col-xs-12 col-md-9">
-				<h2 class="visible-xs visible-sm">My Portfolio</h2>
-				<div class="row">
-					
-					<ul class="projects-ul">
-					</ul>
-				</div>
-				</div>
-			</div>
-		<hr class="secDiv">
-	</section>
-	<section id="contact" class="container">
-		<div class="row">
-			<div class="col-md-3 text-right hidden-sm hidden-xs">
-				<h2>Contact<br>Me</h2>
-			</div>
-			<div class="col-xs-12 col-md-9">
-				<h2 class="visible-xs visible-sm">Contact Me</h2>
-				<p class="lead">You can write to me at:-</p>
-				<p class="lead"><em><a href="mailto:adalenvladi@gmails.com">adalenvladi@gmail.com</a></em></p>
-				<p><a href="websites/">Websites</a></p>
-				<p><a href="AccountKit-Implemention/">AccountKit-Implemention</a></p>
-			</div>
-		</div>
-	</section>
-</main>
-<footer>
-	<div class="container">
-		<span class="pull-left">&copy;<script>document.write(new Date());</script></span>
-		<span class="pull-right">
-			<a href="#">
-				<i class="fa fa-arrow-circle-o-up"></i> Back to Top
-			</a>
-		</span>
-	</div>
-</footer>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
-<script>
-	const classes = {
-  a: "projects-a",
-  li: "projects-li",
-  ul: "projects-ul",
-  lang: "projects-lang",
-  desc: "projects-desc"
-};
-
-const username = "adalenv";
-
-const repoXHR = new XMLHttpRequest();
-
-function populate() {
-  const repos = JSON.parse(this.response);
-  const ul = document.getElementsByClassName(classes.ul)[0];
-
-  for (var i = 0, len = repos.length; i < len; i++) {
-    if (!repos[i].fork) {
-      const li = document.createElement("li");
-      const a = document.createElement("a");
-      const p = document.createElement("p");
-      const p2 = document.createElement("p");
-      
-      li.className = classes.li;
-      
-      a.className = classes.a;
-      a.href = repos[i].html_url;
-      a.innerText = repos[i].name;
-      
-      p.className = classes.lang;
-      p.innerText = repos[i].language || " ";
-      
-      p2.className = classes.desc;
-      p2.innerText = repos[i].description;
-      
-      ul.appendChild(li)
-        .appendChild(a)
-        .appendChild(p)
-        .appendChild(p2);
-    }
-  }
-}
-
-repoXHR.open(
-  "GET",
-  'https://api.github.com/users/' + username + '/repos?sort=pushed&type=owner',
-  true
-);
-repoXHR.addEventListener("load", populate);
-repoXHR.send();
-
-</script>
-  <style>
-
-
-.projects-title {
-  color: #518bbe;
-  vertical-align: .35em;
-  display: inline-block;
-  font-size: 2em;
-  font-weight: 400;
-}
-
-.projects-ul {
-  margin: 0;
-  padding: 0;
-}
-
-.projects-li {
-  box-sizing: border-box;
-  width: 16em;
-  height: 11em;
-  vertical-align: top;
-  display: inline-block;
-  list-style: none;
-  margin: 1em 0 0 1em;
-  padding: .5em;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.projects-li:nth-child(3n-2) {
-  margin: 1em 0 0 0;
-}
-
-.projects-a {
-  background: url('https://qph.fs.quoracdn.net/main-qimg-b9acd96ce9cbc1d063f309f2ee847e48') !important;
-  background-position: left !important;
-  background-origin: border-box !important;
-  height: 11em;
-	border-top: .5em solid #efefef;
-	display: block;
-  color: #518bbe;
-  text-decoration: none;
-  padding: 0 .5em 0 0;
-  margin: 0;
-  font-size: 1.1em;
-}
-.projects-a:hover {
-  border-top: .5em solid #4C4690;
-}
-
-.projects-a:hover {
-  color: #4C4690;
-}
-
-.projects-lang {
-  color: #999;
-  font-size: .8em;
-  margin: .2em 0 0 0;
-}
-
-.projects-desc {
-  color: #171717;
-  text-overflow: inherit;
-}
-
-.social-icons {
-	display: inline-block;
-  width: 3em;
-  height: 3em;
-  margin-right: .5em;
-}
-
-.social-icons path {
-  fill: #518bbe;
-}
-</style>
-</body>
-</html>
+</body></html>
